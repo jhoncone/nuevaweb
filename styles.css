@@ -1,0 +1,355 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  .titulo-seccion {
+    font-size: 32px;
+    color: #39ff14;
+    margin-bottom: 20px;
+  }
+  
+  .descripcion {
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  /* Estilos del encabezado y navegación */
+  header {
+    background-color: #000;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #39ff14;
+  }
+  
+  /* Estilos de secciones */
+  #inicio {
+    background-color: #000;
+    color: #fff;
+    padding: 200px 0;
+    text-align: center;
+  }
+  
+  #inicio .titulo {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #39ff14;
+  }
+  
+  #inicio .descripcion {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  #inicio .nombre-desarrollador {
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: #39ff14;
+  }
+  
+  #inicio .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #39ff14;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #inicio .btn:hover {
+    background-color: #000;
+    color: #39ff14;
+  }
+  
+  #sobre-mi {
+    background-color: #000;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  #sobre-mi .interes {
+    margin-top: 40px;
+  }
+  
+  #habilidades {
+    background-color: #000;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .habilidades-lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  
+  .habilidad {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .titulo-habilidad {
+    font-size: 24px;
+    color: #39ff14;
+    margin-bottom: 10px;
+  }
+  
+  .descripcion-habilidad {
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  #proyectos {
+    background-color: #000;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  #proyectos .titulo-seccion {
+    color: #39ff14;
+  }
+  
+  .proyecto {
+    margin-bottom: 40px;
+  }
+  
+  .titulo-proyecto {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .descripcion-proyecto {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .proyecto .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #39ff14;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .proyecto .btn:hover {
+    background-color: #000;
+    color: #39ff14;
+  }
+  
+  #experiencia {
+    background-color: #000;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .experiencia-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .experiencia-lista li {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  #contacto {
+    background-color: #000;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  #contacto .titulo-seccion {
+    color: #39ff14;
+  }
+  
+  #formulario-contacto {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  #formulario-contacto input,
+  #formulario-contacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  #formulario-contacto button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #39ff14;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #formulario-contacto button:hover {
+    background-color: #000;
+    color: #39ff14;
+  }
+  
+  /* Animaciones */
+  @keyframes neon-glow {
+    0% {
+      text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 40px #39ff14, 0 0 80px #39ff14, 0 0 120px #39ff14, 0 0 150px #39ff14;
+    }
+    50% {
+      text-shadow: none;
+    }
+    100% {
+      text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 40px #39ff14, 0 0 80px #39ff14, 0 0 120px #39ff14, 0 0 150px #39ff14;
+    }
+  }
+  
+  .neon-glow {
+    animation: neon-glow 2s linear infinite;
+  }
+  
+  @keyframes neon-pulse {
+    0% {
+      text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14, 0 0 40px #39ff14;
+    }
+    50% {
+      text-shadow: none;
+    }
+    100% {
+      text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14, 0 0 40px #39ff14;
+    }
+  }
+  
+  .neon-pulse {
+    animation: neon-pulse 2s linear infinite;
+  }
+  
+  @keyframes neon-flicker {
+    0% {
+      text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14, 0 0 40px #39ff14;
+    }
+    50% {
+      text-shadow: none;
+    }
+    100% {
+      text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14, 0 0 40px #39ff14;
+    }
+  }
+  
+  .neon-flicker {
+    animation: neon-flicker 2s linear infinite;
+  }
+/* Estilos para la sección de contacto */
+#contacto {
+  background-color: #f7f7f7;
+  padding: 40px;
+}
+
+#contacto h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#formulario-contacto textarea {
+  height: 100px;
+}
+
+#formulario-contacto button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Estilos para la sección de redes sociales */
+#redes-sociales {
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+#redes-sociales h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#redes-sociales ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#redes-sociales li {
+  margin-bottom: 10px;
+}
+
+#redes-sociales a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+#redes-sociales a:hover {
+  color: #4caf50;
+}
+  

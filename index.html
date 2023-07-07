@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    /* Estilos adicionales para el aspecto futurista y tecnológico */
+
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+    }
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    /* Estilos para el aspecto futurista y tecnológico */
+
+    #inicio {
+      background-image: linear-gradient(135deg, #00eaff, #0058ff);
+      color: #fff;
+      padding: 200px 0;
+      text-align: center;
+    }
+
+    #inicio h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      animation: neon-pulse 2s linear infinite;
+    }
+
+    #inicio p {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    @keyframes neon-pulse {
+      0% {
+        text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14, 0 0 40px #39ff14;
+      }
+      50% {
+        text-shadow: none;
+      }
+      100% {
+        text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14, 0 0 40px #39ff14;
+      }
+    }
+
+    #sobre-mi {
+      background-color: #1b1b1b;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    #sobre-mi h2 {
+      font-size: 36px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    #sobre-mi p {
+      font-size: 18px;
+      color: #aaa;
+      margin-bottom: 40px;
+    }
+
+    #habilidades {
+      background-color: #000;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    #habilidades h2 {
+      font-size: 36px;
+      color: #fff;
+      margin-bottom: 40px;
+    }
+
+    .habilidades-lista {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .habilidad {
+      width: 300px;
+      margin: 20px;
+      padding: 20px;
+      background-color: #1b1b1b;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .habilidad h3 {
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .habilidad p {
+      font-size: 16px;
+      color: #aaa;
+    }
+
+    #proyectos {
+      background-color: #1b1b1b;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    #proyectos h2 {
+      font-size: 36px;
+      color: #fff;
+      margin-bottom: 40px;
+    }
+
+    .proyecto {
+      margin-bottom: 40px;
+    }
+
+    .proyecto h3 {
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .proyecto p {
+      font-size: 16px;
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+
+    .proyecto .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #00eaff;
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .proyecto .btn:hover {
+      background-color: #0058ff;
+    }
+
+    #contacto {
+      background-color: #000;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    #contacto h2 {
+      font-size: 36px;
+      color: #fff;
+      margin-bottom: 40px;
+    }
+
+    #formulario-contacto {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    #formulario-contacto input,
+    #formulario-contacto textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      resize: vertical;
+      background-color: transparent;
+      color: #fff;
+    }
+
+    #formulario-contacto button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #00eaff;
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      border: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    #formulario-contacto button:hover {
+      background-color: #0058ff;
+    }
+
+    /* Efectos de luces de neón */
+
+    .neon-text {
+      font-size: 48px;
+      color: #39ff14;
+      text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14, 0 0 40px #39ff14;
+      animation: neon-pulse 2s linear infinite;
+    }
+
+    .neon-pulse {
+      animation: neon-pulse 2s linear infinite;
+    }
+/* Estilos para la sección de contacto */
+#contacto {
+  background-color: #f7f7f7;
+  padding: 40px;
+}
+
+#contacto h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#formulario-contacto textarea {
+  height: 100px;
+}
+
+#formulario-contacto button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+#contacto h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+#formulario-contacto textarea {
+  height: 100px;
+}
+
+#formulario-contacto button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Estilos para la sección de redes sociales */
+#redes-sociales {
+  background-color: #f7f7f7;
+  padding: 40px;
+}
+
+#redes-sociales h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#redes-sociales ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#redes-sociales li {
+  margin-bottom: 10px;
+}
+
+#redes-sociales a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+#redes-sociales a:hover {
+  color: #4caf50;
+}
+
+
+    @keyframes neon-pulse {
+      0% {
+        text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14, 0 0 40px #39ff14;
+      }
+      50% {
+        text-shadow: none;
+      }
+      100% {
+        text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14, 0 0 40px #39ff14;
+      }
+    }
+
+    @keyframes neon-flicker {
+      0% {
+        text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14, 0 0 40px #39ff14;
+      }
+      50% {
+        text-shadow: none;
+      }
+      100% {
+        text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14, 0 0 40px #39ff14;
+      }
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <section id="inicio">
+      <h1 class="neon-text">Bienvenido a mi Portafolio</h1>
+      <p>Jonatan Valderrama Software Engineer </p>
+      <a href="#proyectos" class="btn">Ver Proyectos</a>
+    </section>
+
+    <section id="sobre-mi">
+      <h2>Sobre Mí</h2>
+      <p>Soy un ingeniero de software altamente capacitado y apasionado por el desarrollo de aplicaciones y sistemas de software. Tengo experiencia en el diseño, desarrollo, implementación y mantenimiento de soluciones de software de alta calidad. Mi enfoque principal está en la construcción de software escalable, eficiente y seguro, utilizando las mejores prácticas de ingeniería. Soy un apasionado de aprender nuevas tecnologías y estoy constantemente actualizando mis habilidades para mantenerme al día con las últimas tendencias en el campo del desarrollo de software. Mi objetivo es utilizar mi experiencia y conocimientos para crear soluciones innovadoras que impulsen el éxito de los proyectos y satisfagan las necesidades de los usuarios finales.</p>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <div class="habilidades-lista">
+        <div class="habilidad">
+          <h3>Desarrollo Web</h3>
+          <p>Amplios conocimientos en HTML, CSS y JavaScript. Experiencia en frameworks como React y Angular.</p>
+        </div>
+        <div class="habilidad">
+          <h3>Diseño UI/UX</h3>
+          <p>Capacidad para crear interfaces atractivas y funcionales. Conocimientos en herramientas de diseño como Sketch y Figma.</p>
+        </div>
+        <div class="habilidad">
+          <h3>Optimización</h3>
+          <p>Experiencia en optimizar el rendimiento de sitios web, mejorar la velocidad de carga y optimizar el SEO.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="proyecto">
+        <h3>proyectoQA </h3>
+        <p>Question Answering basado en tecnicas de NLP para responder preguntas de examenes de admision que se encuentran en archivos yml</p>
+        <a href="#" class="btn">Ver Proyecto</a>
+      </div>
+      <div class="proyecto">
+        <h3>Poke Api</h3>
+        <p>Aplicacion desarrollada como parte del desafio (construye una pokedex) para ingresar a la empresa Avatar global.</p>
+        <a href="#" class="btn">Ver Proyecto</a>
+      </div>
+
+      <div class="proyecto">
+        <h3>Autenticacion de usuarios</h3>
+        <p>Aplicacion Angular  utilizando json web token para  autorizacion segun el rol de los usuarios</p>
+        <a href="#" class="btn">Ver Proyecto</a>
+      </div>
+
+      <div class="proyecto">
+        <h3>BIG M AlgorithmSolver</h3>
+        <p>Aplicacion fronted que implementa el Famoso Algoritmo en investigacion de operaciones conocido como el  metodo de la Gran M, permite encontrar la solucion optima.</p>
+        <a href="#" class="btn">Ver Proyecto</a>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <div id="formulario-contacto">
+        <input type="text" placeholder="Nombre">
+        <input type="email" placeholder="Correo Electrónico">
+        <textarea placeholder="Mensaje"></textarea>
+        <button>Enviar Mensaje</button>
+      </div>
+    </section>
+
+    <section id="redes-sociales">
+      <h2>Redes Sociales</h2>
+      <ul>
+        <li><a href="https://github.com/tu_usuario_de_github">Linkendin</a></li>
+        <li><a href="https://github.com/jhoncone">GitHub</a></li>
+        <!-- Agrega más enlaces a tus otras redes sociales si lo deseas -->
+        <li><a href="https://www.hackerrank.com/jonatan_valderr1?hr_r=1">HackerRank</a></li>
+      </ul>
+    </section>
+  </div>
+</body>
+
+</html>
